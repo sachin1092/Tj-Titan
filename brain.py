@@ -87,7 +87,8 @@ def parseConvResponse(response):
 
         elif intent=='RECORD_VIDEO':
             captureVideo()
-
+        elif intent=='GREETINGS':
+            say("Hi, I am a Tj Titan, I am here to help you out with Music, Weather, Camera, Restaurants and more.")
         else:
             say("Sorry, I need an upgrade to answer that.")
     else:

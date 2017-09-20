@@ -25,8 +25,8 @@ def capture_video(time=10):
     i = 0
     while os.path.exists(video_directory + '/' + 'video_' + str(i) + '.h264'):
         i += 1
-    subprocess.Popen(["python", "watson_tts.py", "video recording will start in 3, 2, 1..", 'en-US_AllisonVoice'] , stdout=subprocess.PIPE)
-    subprocess.Popen(["python", "audiolib.py", "assets/video.wav"] , stdout=subprocess.PIPE)
+    subprocess.Popen(["python", "watson_tts.py", "video recording will start in 3, 2, 1,", 'en-US_AllisonVoice'] , stdout=subprocess.PIPE)
+    # subprocess.Popen(["python", "audiolib.py", "assets/video.wav"] , stdout=subprocess.PIPE)
     camera.start_recording(video_directory + '/' + 'video_' + str(i) + '.h264')
     sleep(time)
     camera.stop_recording()
