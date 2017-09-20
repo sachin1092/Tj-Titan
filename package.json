@@ -1,0 +1,18 @@
+{
+  "name": "node_stt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Sachin Shinde, Chethan Gowda",
+  "private": true,
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "forever": "^0.15.2",
+    "fs": "0.0.1-security",
+    "python-shell": "^0.4.0",
+    "stream": "0.0.2",
+    "watson-developer-cloud": "^1.12.4"
+  }
+}

@@ -1,0 +1,9 @@
+venv/
+*.pyc
+constants.py
+.DS_Store
+files/
+keys/
+logs/
+node_modules/
+constants.js
