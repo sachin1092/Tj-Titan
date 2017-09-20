@@ -1,6 +1,7 @@
 import picamera
 import os
 from time import sleep
+import subprocess
 
 image_directory="files/images"
 video_directory="files/videos"
@@ -12,6 +13,7 @@ def capture_image():
     i = 0
     while os.path.exists(image_directory + '/' + 'image_' + str(i) + '.jpg'):
         i += 1
+    subprocess.Popen(["python", "audiolib.py", "assets/shutter.wav"] , stdout=subprocess.PIPE)
     camera.capture(image_directory + '/' + 'image_' + str(i) + '.jpg')
     print "capturing image"
     return image_directory + '/' + 'image_' + str(i) + '.jpg'

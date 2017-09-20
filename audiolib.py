@@ -1,6 +1,7 @@
 import pyaudio
 import wave
 from utils import resource_path
+import sys
 
 class AudioFile(object):
     chunk = 1024
@@ -33,6 +34,11 @@ class AudioFile(object):
         self.p.terminate()
 
 if __name__ == '__main__':
-    audio_file = AudioFile(file=resource_path('assets/beep.wav'))
-    audio_file.play()
-    audio_file.close()
+    if len(sys.argv) >= 2:
+        audio_file = AudioFile(file=resource_path(sys.argv[1]))
+        audio_file.play()
+        audio_file.close()
+    else:
+        audio_file = AudioFile(file=resource_path('assets/beep.wav'))
+        audio_file.play()
+        audio_file.close()
