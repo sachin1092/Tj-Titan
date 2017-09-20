@@ -20,4 +20,7 @@ def getConversationResponse(query):
     return response
 
 if __name__ == '__main__':
-    getConversationResponse('Can you play Attention from Shawn Mendes')
+    import subprocess
+    result = getConversationResponse('Tell me a joke')
+    subprocess.Popen(["python", "watson_tts.py", result.get("output", {}).get("text", [""])[0], 'en-US_AllisonVoice'] , stdout=subprocess.PIPE)
+    
