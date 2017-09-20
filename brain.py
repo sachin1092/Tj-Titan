@@ -89,9 +89,9 @@ def parseConvResponse(response):
             captureVideo()
 
         else:
-            say("Seems like you are talking about something that I don't know. You can talk to me about Music, Restaurants and Weather")
+            say("Sorry, I need an upgrade to answer that.")
     else:
-        say("Seems like you are talking about something that I don't know. You can talk to me about Music, Restaurants and Weather")
+        say("Sorry, I need an upgrade to answer that.")
 
 def captureImage():
     try:
