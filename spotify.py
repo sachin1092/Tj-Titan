@@ -30,7 +30,10 @@ class Spotify(object):
         self.client.searchadd("any", song_name)
         self.connectIfNC()
         print(self.client.playlistinfo())
-        self.client.play(0)
+        try:
+            self.client.play(0)
+        except:
+            self.playLibrary()
 
     def toggleMusic(self):
         self.connectIfNC()
