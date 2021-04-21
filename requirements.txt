@@ -22,7 +22,7 @@ pycparser==2.18
 pyOpenSSL==17.2.0
 pysolr==3.6.0
 python-mpd2==0.5.5
-PyYAML==3.12
+PyYAML==5.4
 requests==2.18.4
 requests-toolbelt==0.8.0
 rsa==3.4.2
