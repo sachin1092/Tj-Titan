@@ -31,6 +31,6 @@ six==1.11.0
 Twisted==20.3.0
 txaio==2.8.2
 uritemplate==3.0.0
-urllib3==1.22
+urllib3==1.26.5
 watson-developer-cloud==0.25.2
 zope.interface==4.4.2
