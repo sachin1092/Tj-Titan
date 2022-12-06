@@ -13,6 +13,6 @@
     "fs": "0.0.1-security",
     "python-shell": "^0.4.0",
     "stream": "0.0.2",
-    "watson-developer-cloud": "^1.12.4"
+    "watson-developer-cloud": "^4.0.1"
   }
 }
